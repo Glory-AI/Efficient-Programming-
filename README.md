@@ -6,8 +6,9 @@ This repository contains codes developed algorithmically to reinforce the unders
 
 ## Binary Search (Bisection Method)
 ``` python
-
-user_num= int(input('Enter the nuber you want to find the cube root of'))
+import time
+number= int(input('Enter the nuber you want to find the cube root of'))
+digits_num = len(str(abs(number)))
 def find_cube_root (number, epsilon=0.01):
     start_time= time.time()
     steps = 0
@@ -29,12 +30,12 @@ def find_cube_root (number, epsilon=0.01):
     end_time= time.time()
     total_time= end_time - start_time
 
-    return guess, steps, total_time
+    return guess, steps, total_time, digits_num
  ```
 
 ```python
 # Calling defined function and printing required output
-cube_root, number_of_steps, time_taken=find_cube_root(user_num)
+cube_root, number_of_steps, time_taken=find_cube_root(number)
 print(f"The estimated cube root of {user_num} is {cube_root}")
 print(f"The number of steps taken: {steps}")
 print(f"Time taken: {time_taken}"
@@ -43,7 +44,8 @@ print(f"Time taken: {time_taken}"
 ```python
 #To plot a graph, one or more points are required depending on user's decision
 #Define a function to take care of number of points to be plotted on performance evaluation graph
-def evaluate_performance:
+import matplotlib.pyplot as plt
+def evaluate_performance():
      #declare an open list to contain values
       numbers = []
       #using a boolean to check state of number                                                                
@@ -59,7 +61,8 @@ def evaluate_performance:
 ```
 
 ``` python
-for i in range(count):
+#function definition continuation
+   for i in range(count):
         while True:
             try:
                 num = int(input(f"Enter number {i+1}: "))
@@ -85,4 +88,5 @@ for i in range(count):
     plt.ylabel('Steps Taken to Estimate Cube Root')
     plt.grid(True)
     plt.show()
+evaluate_performance
 ```
