@@ -85,13 +85,4 @@ for i in range(count):
     plt.ylabel('Steps Taken to Estimate Cube Root')
     plt.grid(True)
     plt.show()
-
-# Plotting
-plt.figure(figsize=(10, 6))
-plt.plot(x_labels, steps_list, 'bo-', markersize=4)
-plt.title('Cube root Estimation Steps Against Number Length')
-plt.xlabel('Number of Digits In User Input')
-plt.ylabel('Steps taken to estimate cube root')
-plt.grid(True)
-plt.show()
 ```
