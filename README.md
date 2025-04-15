@@ -88,5 +88,5 @@ def evaluate_performance():
     plt.ylabel('Steps Taken to Estimate Cube Root')
     plt.grid(True)
     plt.show()
-evaluate_performance
+evaluate_performance() 
 ```
